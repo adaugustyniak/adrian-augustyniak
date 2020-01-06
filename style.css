@@ -104,7 +104,14 @@ body {
   font-size: 25px;
   background-color: #000;
 }
+.heading-underline 
+{
+  width: 5rem;
+  height: .2rem;
+  background-color: #0E8044;
+  margin: 0 auto 2rem;
 
+}
 /* End Skills Section */
 
 /* Photo  */

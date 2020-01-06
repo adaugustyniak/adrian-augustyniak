@@ -71,13 +71,13 @@ body {
 }
 
 .overlay-desc h1 {
-
+  
   color: white;
   font-size: 160px;
   text-align: center;
   letter-spacing: 4px;
   text-shadow: 1px 1px 15px #000;
-  padding-top: 50px;
+  padding-top: 150px;
 }
 
 /* End Video section  */

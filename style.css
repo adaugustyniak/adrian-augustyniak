@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  color: #222;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Navbar Section */
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 7px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background-color: white !important;
+}
+
+.navbar a {
+  color: black;
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+.navbar-nav li:hover>.dropdown-menu {
+  display: block;
+}
+
+.navbar {
+  background-color: #000;
+
+  padding-bottom: 5px;
+}
+
+/* End Navbar Section */
+/* Video section  */
+.overlay-desc {
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: -200px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-2 {
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: -10px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-desc h1 {
+
+  color: white;
+  font-size: 160px;
+  text-align: center;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 15px #000;
+}
+
+/* End Video section  */
+/* Blockquote Section */
+.blockquote {
+  padding: 300px;
+}
+
+/* Skills Section  */
+#skills {
+  background-image: url(img/starfield-banner.png);
+  color: white;
+  height: 950px;
+  padding: 100px;
+}
+
+#skills h3 {
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+.table {
+  text-align: center;
+  font-size: 25px;
+  background-color: #000;
+}
+
+/* End Skills Section */
+
+/* Photo  */
+.photo img {
+  transition: all 0.3s ease-in-out;
+  max-width: 100%;
+  height: auto;
+}
+
+.photo img:hover {
+  -webkit-transform: scale(1.10);
+  -ms-transform: scale(1.10);
+  transform: scale(1.10);
+}
+
+#about img {
+  border-radius: 50%;
+  width: 75%;
+  border: black;
+}
+
+/* End Photo  */
+article {
+  padding: 150px;
+}
+
+/* Contact Section */
+.square a h4 {
+  font-size: 25px;
+}
+
+.border {
+  border: 1px black;
+}
+
+.btn-lg {
+  border-width: small;
+  border-radius: 0;
+  padding: .6rem 1.3rem;
+  font-size: 1.1rem;
+}
+
+.connect {
+  background-image: url(img/starfield-banner.png);
+  color: white;
+  height: 625px;
+}
+
+footer {
+  background-color: black;
+  color: #404040;
+}
+
+#contact h3 {
+  font-size: 45px;
+  text-align: center;
+}
+
+#contact a {
+  color: white;
+}
+
+#contact a:hover {
+  color: #ddd;
+  text-decoration-color: #ddd;
+}
+
+.border {
+  background-color: #000;
+}
+
+/* Social Media Section */
+.svg-inline--fa {
+  margin: 1rem;
+}
+
+#socialmedia a {
+  color: white;
+  font-size: 30px;
+  letter-spacing: 10px;
+}
+
+#socialmedia a.linkedin:hover {
+  color: #007bb5;
+}
+
+#socialmedia a.github:hover {
+  color: #211F1F;
+}
+
+#socialmedia a.facebook:hover {
+  color: #1877f2;
+}
+
+#socialmedia a.instagram:hover {
+  color: #c32aa3;
+}
+
+/*---Media Queries --*/
+/* medium */
+@media (max-width: 992px) {
+  .overlay-desc h1 {
+    font-size: 60px;
+  }
+
+  .square a h4 {
+    font-size: 30px;
+  }
+}
+
+/* small */
+@media (max-width: 768px) {
+  .carousel-caption {
+    top: 45%;
+  }
+}
+
+.carousel-caption h1 {
+  font-size: 300%;
+}
+
+.carousel-caption button {
+  font-size: 90%;
+  padding: 8px;
+}
+
+.overlay-desc h1 {
+  font-size: 55px;
+}
+
+.overlay-2 .btn {
+  font-size: 18px;
+}
+
+.blockquote {
+  padding: 75px;
+}
+
+article {
+  padding: 75px;
+}
+
+.square a h4 {
+  font-size: 18px;
+}
+
+/* extra small */
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 15px;
+  }
+
+  .nav-link {
+    font-size: 15px;
+  }
+
+  .overlay-desc h1 {
+    padding-top: 150px;
+    font-size: 30px;
+  }
+
+  .overlay-2 .btn {
+    margin-top: 70px;
+    font-size: 16px;
+  }
+
+  .blockquote {
+    padding: 0px;
+  }
+
+  .blockquote i {
+    font-size: 18px;
+  }
+
+  cite {
+    font-size: 18px;
+  }
+
+  article {
+    padding: 0px;
+  }
+
+  .square a h4 {
+    font-size: 18px;
+  }
+
+  #skills {
+    padding: 25px;
+  }
+
+  #skills h3 {
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+
+  .table {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .photo img {
+    max-width: 35%;
+    padding-top: 20px;
+  }
+
+  #contact h3 {
+    font-size: 30px;
+  }
+
+  .blockquote {
+    font-size:
+  }
+}

@@ -77,9 +77,12 @@ body {
   text-align: center;
   letter-spacing: 4px;
   text-shadow: 1px 1px 15px #000;
-  padding-top: 250px;
+  padding-top: 150px;
 }
-
+ .overlay-2 .btn {
+    margin-top: 200px;
+    font-size: 16px;
+  }
 /* End Video section  */
 /* Blockquote Section */
 .blockquote {

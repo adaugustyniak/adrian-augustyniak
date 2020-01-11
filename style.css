@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+::selection 
+{
+    background: #0E804;
+}
 
 /* Navbar Section */
 .navbar {

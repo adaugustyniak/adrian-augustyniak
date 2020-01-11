@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 
+::selection 
+{
+    background: #0E8044;
+}
+
 html,
 body {
   height: 100%;
@@ -9,10 +14,7 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-::selection 
-{
-    background: #0E8044;
-}
+
 
 /* Navbar Section */
 .navbar {

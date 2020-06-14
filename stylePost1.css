@@ -5,6 +5,12 @@
 p
 {
   font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+li
+{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
 }
 .navbar {
   position: fixed;
@@ -60,10 +66,10 @@ blockquote
 {
     font-style: italic;
 }
-p
+/* p
 {
     font-size: 18px;
-}
+} */
 /* Social Media Section */
 .footer
 {

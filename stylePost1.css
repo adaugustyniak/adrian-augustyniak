@@ -1,0 +1,65 @@
+.container
+{
+    font-family: 'Roboto', sans-serif;
+}
+article
+{
+    font-family: 'Roboto', sans-serif;
+    padding: 25px;
+    text-align: justify;
+    width: 1200px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.figure img
+{
+    Width: 40%;
+}
+#main
+{
+    width: 80%;
+   
+}
+blockquote
+{
+    font-style: italic;
+}
+p
+{
+    font-size: 18px;
+}
+/* Social Media Section */
+.footer
+{
+    background-color: #211F1F;
+    color: grey;
+}
+#socialmedia
+{
+    background-color: #211F1F;
+}
+.svg-inline--fa {
+    margin: 1rem;
+  }
+  
+  #socialmedia a {
+    color: white;
+    font-size: 30px;
+    letter-spacing: 10px;
+  }
+  
+  #socialmedia a.linkedin:hover {
+    color: #007bb5;
+  }
+  
+  #socialmedia a.github:hover {
+    color: grey;
+  }
+  
+  #socialmedia a.facebook:hover {
+    color: #1877f2;
+  }
+  
+  #socialmedia a.instagram:hover {
+    color: #c32aa3;
+  }

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Adrian Augustyniak</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<!-- <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
+	<link href="stylePost1.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/fontello.css">
+	<script src="https://kit.fontawesome.com/8a358593c5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header>
+		<!-- Navigation -->
+		<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light m-0">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#home"><i class="fas fa-search"></i> Adrian Augustyniak</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+					aria-controls="navbarResponsive" aria-expanded="false" aria-label="Przełącznik nawigacji">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#home">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#skills">Skills</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">About</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button"
+								aria-expanded="false" id="submenu" aria-haspopup="true">Resume</a>
+							<div class="dropdown-menu" aria-labelledby="submenu">
+								<a class="dropdown-item"
+									href="pdf/Adrian_Augustyniak_resume_and_motivational_letter.pdf"
+									target="_blank">PDF</a>
+							</div>	
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="blog.html">Blog (beta)</a>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<!-- BLOG  -->
+		<div class="container">
+			<h1 class="text-center">Blog (beta)</h1>
+			<p class="text-center">Everything that should know a beginner tester about testing and more</p>
+		
+		<article>
+			<header>
+				<!-- <a href="#" class="badge badge-primary">#testing</a> -->
+				<br>
+				
+				<br>
+			</header>
+			<section id="main">
+				<figure class="figure">
+					<img src="img/starWars.jpeg" class="figure-img img-fluid" alt="figure image">
+				</figure>
+				<!-- <figcaption>
+					podpis pod zdjęcie
+					</figcaption> -->
+
+				<br>
+				<div>Author: Adrian</div>
+				<div>Posted on: <time datetime="2020-01-01">June 14, 2020</time></div>
+				<div>4 minutes read &#9749;</div>
+				<br>
+				<h1>One small step for a tester... </h1>
+				<br>
+				<p class="lead">Po co piszę ten blog? Chciałem przed wszystkim uporządkować sobie wiedzę, jaką do tej
+					pory zdobyłem
+					w testowaniu i właśnie celem bloga będzie poukładanie sobie tego wszystkiego w głowie i przelanie
+					tego tutaj. Jeżeli
+					przy okazji komuś to, co będę pisać przyda się to będzie super! Postaram się to zrobić w jak
+					najbardziej przystępny sposób. Plan jest taki, żeby pisać o najważniejszych zagadnieniach
+					testerskich bazując na wiedzy z teorii, technicznych aspektach, narzędzi wspomagających pracę
+					testera i praktycznych przykładów zastosowań. Tyle tytułem wstępu, a teraz do dzieła! Pierwszy wpis
+					będzie o idei testowania i
+					dlaczego świat potrzebuje testerów oprogramowania.
+				</p>
+				<br>
+				<p>
+					<a href="#english" style="color: #ffe81f;">[to english version fly down] ⬇️</a>
+				</p>
+				<br>
+				<h2>
+					Czym jest testowanie oprogramowania?
+				</h2>
+				<p>
+					Zanim zajrzymy do słownikowej definicji, chciałbym opisać je moimi słowami w dwóch zdaniach:
+				</p>
+				<br>
+				<blockquote class="blockquote">
+					<p>Testowanie jest weryfikacją czy oprogramowanie działa poprawnie, zgodnie z założeniem. Jest
+						procesem zapobiegania wypuszczenia na rynek wadliwego oprogramowania.</p>
+					<!-- <footer class="blockquote-footer">First name, last name</footer> -->
+				</blockquote>
+				<br>
+				<!-- <h2>Subheadings</h2> -->
+				<p>
+					Ta definicja jest subiektywnym spojrzeniem, wydaje mi się, że oddaje meritum jednak warto samemu
+					odpowiedzieć sobie na to pytanie. Pewnie za jakiś czas moja czy Wasza definicja może się zmienić, bo
+					jak się rozwijamy to i nasza perspektywa się zmienia!
+				</p>
+				<p>A czym w takim razie zajmują się testerzy? W uproszczeniu:</p>
+				<br>
+				<blockquote class="blockquote">
+					<p>Zadaniem testerów jest znalezienie błędów w oprogramowaniu. </p>
+				</blockquote>
+				<br>
+				<p style="font-style: bold;">
+					Według słownika ISTQB:
+				</p>
+
+				<blockquote class="blockquote">
+					<p>Testowanie – proces składający się z wszystkich czynności cyklu życia, zarówno statycznych jak i
+						dynamicznych; skoncentrowany na planowaniu, przygotowaniu i ewaluacji oprogramowania oraz
+						powiązanych produktów w celu określenia czy spełniają one wyspecyfikowane wymagania oraz
+						wykazania, że są one dopasowane do swoich celów oraz do wykrywania usterek.</p>
+				</blockquote>
+				<br>
+				<p>
+					Jeszcze jedna definicja od Radka Smiligina – autora książki “Zawód Tester” z której będę pewnie
+					przytaczać sporo treści, bo książka jest naprawdę dobra.
+				</p>
+				<blockquote class="blockquote">
+					<p>Testowanie jest naturalnym procesem i czy nazwiemy je uczeniem się, czy eksperymentowaniem, nie
+						ma to większego znaczenia dla samej czynności poznawania i podejmowania decyzji o testowanym
+						obiekcie. Testowanie to doświadczenie i dokonywanie oceny z jednoczesnym opisaniem rzeczy
+						akceptowalnych oraz nieakceptowalnych.</p>
+				</blockquote>
+				<br>
+				<p>Do tych definicji dodałbym jeszcze, że testowanie to opinia, ocena, osąd lub krytyka(konstruktywna) o
+					danym oprogramowaniu. W testowaniu szukamy potwierdzenia, że oprogramowanie działa prawidłowo i czy
+					w danym obszarze znajdują się awarie bądź ich brak. </p>
+				<br>
+				<h2>Co testujemy?</h2>
+				<p>
+					Oprogramowanie mają komputery, smartfony, smartwatche, samochody, tv, konsole do gier, czytniki
+					e-booków, urządzenia domowe takie jak pralki, lodówki, infrastruktura miejska (smart city) itd.
+					Teraz praktycznie wszystkie branże kładą duży nacisk na rozwiązania technologiczne i ta tendencja
+					ciągle
+					rośnie.
+				</p>
+				<br>
+				<p><b>Możemy testować:</b></p>
+				<li>Pomysł na produkt </li>
+				<li>Dokumentację </li>
+				<li>Kod źródłowy </li>
+				<li>Integrację między modułami i systemami </li>
+				<li>Niefunkcjonalne/funkcjonalne cechy produktu</li>
+				<br><br>
+				<h2>Co powinniśmy wiedzieć o testowaniu? </h2>
+				<li>jest to proces związany z wytwarzaniem oprogramowania </li>
+				<li>jest to jeden z procesów zapewnienia jakości oprogramowania </li>
+				<li>testowanie ma na celu weryfikację i walidację oprogramowania </li>
+				<li>tester nie znajdzie wszystkich błędów, ale dobrze zaplanowane i przeprowadzone testy zmniejszą
+					ryzyko ich wystąpienia </li>
+				<li>testujemy głównie po to by znaleźć błędy w oprogramowaniu, ale nie tylko. Testowanie również,
+					powinno dawać odpowiedzi na różne pytania np. czy aplikacja jest gotowa do udostępnienia klientowi
+				</li>
+				<br><br>
+				<p>Testowanie znane jest też pod nazwą <b>Quality Assurance</b>, czyli zapewnienie jakości. Te pojęcia
+					często działaj zamiennie jednak nie są do końca takie same i trzeba umieć je rozróżniać.</p>
+				<br>
+				<h2>Czym różni się Tester od QA</h2>
+				<p>Zakres obowiązków QA jest znacznie szerszy od codziennych zadań Testera, bo poza sprawdzaniem jakości
+					oprogramowania, QA musi także optymalizować procesy i cykl życia danego produktu. Tester zgłasza
+					błędy znalezione w aplikacji, a QA ma ulepszać procesy. W przypadku obu stanowisk jedna cecha
+					pozostaje na pewno wspólna: bez względu na metodę pracy, zarówno tester jak i QA mają za zadanie
+					oddać produkt jak najwyższej jakości</p>
+				<br>
+				<h2>Weryfikacja a walidacja</h2>
+				<p>Idąc dalej testerzy podczas przeprowadzania testów mają weryfikować, czy oprogramowanie działa
+					poprawnie, czy stan jest taki jak zakładaliśmy. Weryfikację przeprowadza się najczęściej na
+					podstawie dokumentu jakim jest <b>specyfikacja wymagań</b>.
+					<p>Przeprowadza się też walidację, czyli sprawdzamy, czy oprogramowanie jest zgodne z oczekiwaniami
+						użytkownika (klienta, konsumenta, zamawiającego oprogramowanie). Walidację przeprowadza się
+						testami akceptacyjnymi (ang. User Acceptance Test) i testami odbiorowymi.</p>
+					<p>W testowaniu powinniśmy dążyć do tego, aby weryfikacja i walidacja miały zbliżone wyniki. Mimo,
+						że często potrzeby biznesowe i końcowych użytkowników są nie do końca takie same to im więcej
+						mają wspólnych mianowników tym większa efektywność testowania. To przekłada się na wyższy poziom
+						zadowolenia klienta. (Klient nasz pan)</p>
+					<br>
+					<h2>Dlaczego testowanie jest potrzebne?</h2>
+					<p>Popełnianie błędów jest niestety rzeczą ludzką, ale dlatego z pomocą przychodzimy my – Pogromcy
+						Bugów! Przed nami bugi chowają się w najciemniejszych zakamarkach aplikacji – naszym zadaniem
+						jest je znaleźć i razem z programistami pozbyć się ich raz na zawsze. Precz!</p>
+					<p>Z biznesowego punktu widzenia testowanie oszczędza czas i pieniądze. Im wcześniej błąd zostanie
+						wykryty tym mniej będzie kosztować jego naprawa. Dlatego firmy dążą do tego, aby testować już w
+						najwcześniejszych fazach cyklu życia oprogramowania. (tzw. shift-left testing) Możemy przejrzeć
+						dokumentację, dokonać analizy i tam znaleźć pierwsze błędy – jest to <b>testowanie
+							statyczne</b>.</p>
+					<p>Awarie oprogramowania mogą nawet w najgorszych scenariuszach prowadzić do utraty ludzkiego życia,
+						dlatego w niektórych branżach takich jak medycyna czy transport testowania jest bardzo
+						odpowiedzialnym zadaniem.</p>
+					<p><b>Przykłady z historii:</b></p>
+					<li>26 kwietnia 1994 roku samolot lini lotniczych China Airlines Airbus A300 w wyniku błędu w
+						oprogramowaniu rozbił się i w efekcie zginęło 264 pasażerów.</li>
+					<li>W kwietniu 1999 roku błąd w oprogramowaniu spowodował nieudaną próbę wyniesienia satelity na
+						orbitę, która kosztowała 1,2 miliardów dolarów. Był to najbardziej kosztowny wypadek w historii.
+					</li>
+					<li>Podczas prezentacji nowego systemu operacyjnego Windows 98 firmy Microsoft doszło do awarii.
+						Była to prezentacja na żywo transmitowana w telewizji na całym świecie. Reakcja Billa Gatesa
+						była bezcenna 😀 </li>
+					<br id="youtube">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/er8g6D_PqvY" frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+					<br><br>
+					<h2>Podsumowanie<h2>
+							<p>Tyle z wprowadzenia. Przedstawiłem moją definicję testowania oraz kilka książkowych dla
+								porównania. Co możemy testować, jakie urządzenia, co powinniśmy wiedzieć o testowaniu i
+								dlaczego jest ono niezbędne. Co to jest Quality Assurance i czym się to pojęcie różni od
+								testera. Poznaliśmy różnicę weryfikacji i walidacji oraz historie, gdzie nieznalezienie
+								błędów spowodowało duże straty finansowe i co gorsza śmiertelne!</p>
+							<br>
+							<p>Na koniec cytat Jamesa Marcusa Bacha:</p>
+							<blockquote class="blockquote">
+								<p>Testowanie jest niekończącym się procesem polegającym na porównaniu tego co
+									niewidzialne, do tego, co wieloznaczne, a wykonuje się je po to, aby coś, co jest
+									niemożliwe do przewidzenia, nie dotknęło tych, których, nie znamy z imienia.</p>
+							</blockquote>
+							<br>
+							<p>Uwaga! Dla uporządkowania nazewnictwa przyjmyję zasadę, że bug, błąd, awaria, usterka to
+								jest to samo i będę używać ich zamiennie. Sylabus ISTQB też przyjmuję taką zasadę.</p>
+							<p><b>P.S.</b> Aa i jak ktoś z Was znajdzie literówkę, błąd gramatyczny czy składniowy to
+								znaczy, że ma zadatki na dobrego testera albo już nim jest, bo ma oko do szczegółów oraz
+								zna dobrze składnię języka polskiego i angielskiego. Jak chcecie wpłynąć pozytywnie na
+								jakość tego bloga to możecie mi o tych błędach napisać. Tak trzymać!</p>
+							<br>
+							<!-- English version -->
+							
+							<hr id="english" style="color: black; border-width: 10px;">
+							<br>
+							<p class="lead">
+								Why am I writing this blog? First of all, I wanted to put in order the knowledge I've
+								gained so far in testing, and the main purpose of this blog will be to put it here all
+								from my head. If, by the way, somebody find useful what I will write, it will be great!
+								I will try to do it in the most accessible way possible. The plan is to write about the
+								most important testing issues based on knowledge of theory, technical aspects, tester
+								support tools and practical application examples. So much for the introduction, and now
+								let's work! The first entry will be about the idea of testing and why the world needs
+								software testers.
+							</p>
+							<br>
+							<h2>What is software testing? </h2>
+							<p>Before we look at dictionary definition, I would like to describe it in my words in two
+								sentences: </p>
+							<br>
+							<blockquote class="blockquote">
+								<p>
+									Testing is the verification that the software is working properly as intended. It is
+									the process of preventing the release of defective software on the market.
+								</p>
+							</blockquote>
+							<br>
+							<p>
+								This definition is a subjective view, it seems to me that it reflects the essence, but
+								it is worth answering this question for oneself. Probably in some time my or your
+								definition may change, because as we develop, our perspective changes!
+							</p>
+							<p>Then, what the testers do?</p>
+							<br>
+							<blockquote class="blockquote">
+								<p>
+									The task of testers is to find errors in the software.
+								</p>
+							</blockquote>
+							<br>
+							<p>According to the ISTQB dictionary:</p>
+							<blockquote class="blockquote">
+								<p>
+									Testing is a process consisting of all life cycle activities, both static and
+									dynamic; focused on planning, preparing and evaluating software and related products
+									to determine whether they meet specified requirements and to demonstrate that they
+									are fit for purpose and to detect faults.
+								</p>
+							</blockquote>
+							<br>
+							<p>
+								One more definition from Radosław Smiligin – author of the <b>book “Zawód tester”
+								</b>from which I will probably quote a lot of content because the book is really good.
+							</p>
+							<br>
+							<blockquote class="blockquote">
+								<p>
+									Testing is a natural process and, whether we call it learning or experimenting, it
+									does not matter much for the activity of learning and making decisions about the
+									object being tested. Testing is experience and evaluation while describing things
+									that are acceptable and not acceptable.
+								</p>
+							</blockquote>
+							<br>
+							<p>
+								To these definitions I would also add that testing is an opinion, evaluation, judgment,
+								or criticism (constructive) about given software. In testing, we look for confirmation
+								that the software is working properly and whether or not there are failures in the area.
+							</p>
+							<br>
+							<h2>What are we testing? </h2>
+							<p>
+								The software is in computers, smartphones, smart watches, cars, TVs, game consoles,
+								e-book readers, home appliances such as washing machines, refrigerators, smart city
+								infrastructures etc. Nowadays practically all industries place great emphasis on
+								technological solutions and this trend is still growing.
+							</p>
+							<p><b>We can test:</b></p>
+							<li>Product idea</li>
+							<li>Documentation</li>
+							<li>Source code</li>
+							<li>Integration between modules and systems</li>
+							<li>on-functional/functional product features</li>
+							<br><br>
+							<h2>What should we know about testing?</h2>
+							<li>This is a process associated with software development </li>
+							<li>This is one of the software quality assurance processes </li>
+							<li>Testing is aimed at verifying and validating the software the tester will not find all
+								the errors, but well planned and conducted tests will reduce the risk of their
+								occurrence</li>
+							<li>We test mainly to find errors in the software, but not only </li>
+							<li>Testing also should provide answers to various questions, e.g. whether the applications
+								is ready to be made available to the customer </li>
+							<br>
+							<p>Testing is also known as Quality Assurance. These terms are often interchangeable, but
+								they are not entirely the same and you have to be able to distinguish between them.</p>
+							<br>
+							<h2>How the Tester differs from QA? </h2>
+							<p>The scope of QA duties is much broader than daily tasks of the Tester, because in
+								addition to checking the quality of software, QA must also optimize processes and the
+								life cycle of a given product. The tester reports errors found in the application and QA
+								is to improve processes. In the case of both testers, one thing is certainly common:
+								regardless of the working method, both the tester and the QA are supposed to deliver a
+								product of the highest quality.</p>
+							<br>
+							<h2>Verification and validation </h2>
+							<p>Going further, testers are to verify that the software is working properly and that the
+								state is as we assumed it would be. The verification is usually carried out on the basis
+								of the requirements specification document.
+								We also carry out validation, i.e. we check whether the software complies with the
+								expectations of the user (customer, consumer, company ordering the software). Validation
+								is carried out by <b>User Acceptance Tests</b>.</p>
+							<p>In testing we should we should strive to ensure that verification and validation have
+								similar results. Although often the business and end-user needs are not exactly the
+								same, the more in common they have, the more effective testing is. This leading into
+								higher levels of customer satisfaction. (Customer our master 😀) </p>
+								<br>
+								<h2>Why do we need to test</h2>
+								<p>Making mistakes is unfortunately a human thins, but that’s why we – Bugmasters come with help!  In front of us the bugs hide in the darkest corners of the application and our task is to find them and get rid of them once and for all. Away! </p>
+								<p>From a business perspective, testing saves time and money. The earlier errors are detected, the less it will cost to fix it. That is why companies strive to test from the earliest stages of the software life cycle. (called shift-left testing) We can look through the documentation, analyze it and find the first errors there – this is static testing.</p>
+								<p>Software failures can lead to the loss of human life even in the wors-case scenarios, so in some industries like medicine and transport tesint is a very responsible job.</p>
+								<p>Examples from history:</p>
+								<li>On April 26, 1994 a China Airlines Airbus A300 aircraft crashed and 264 passengers died as a result of a software error.  
+								</li>
+								<li>In April 1999, a software error resulted in an unsuccessful attempt to launch the satellite in orbit, which cost $1.2 billion. It was the most expensive accident in history </li>
+								<li>During the launch of the new Windows 98 operating system from Microsoft, OS crashed. It was tv live presentation and Bill Gates' reaction was invaluable 😅</li>
+								<p><a href="#youtube" style="color: #ffe81f;">[to find video fly up] 🚀</a></p>
+								<br>
+								<h2>Summary</h2>
+								<p>So much for the introduction. I gave my definition of testing and some from books and dictionary for comparison. What we can test, which devices, what we should know about testing and why it is necessary. What is Quality Assurance and how it differs from a tester. We learned the difference between verification and validation and the stories where finding no mistakes caused big financial losses and what it worse, human lives. So, the answer for question why the World needs testers is that they make our lives better and easier by making it easier to use devices with properly working software. Well done work by testers can even save lives in some cases! </p>
+								<br>
+								<p>Finnaly, a quote from James Marcus Bach:</p>
+								<br>
+								<blockquote class="blockquote">
+									<p>
+										Testing is an endless process of comparing the invisible to the ambiguous, and it is done so that something that is impossible to predict does not affect those whom we do not know by name.
+									</p>
+								</blockquote>
+								<br>
+								  <p>Final inscriptions...</p>
+								  <p>Attention! For the ordering of the names, I’ll take the rule that bug, error, malfunctions is the same and I’ll use them interchangeably. The ISTQB syllabus also adopts this rule.</p>
+								  <br>
+								  <p><b>P.S.</b> And when one of you finds a typo, grammatical or syntactic error it means that he/she has will be a good tester or already is, because has an eye for details and knows Polish and English syntax well. If you want to positively influence the quality of this blog, you can write to me about these mistakes. Keep it up!</p>
+								  <br><br>
+								  <p style ="text-align: center;">THE END</p>
+								  <P style ="text-align: center;">of article one</P>
+								
+			</section>
+		</article>
+	</div>
+
+
+
+		<!--- social media -->
+		<br /><br /><br />
+		<div id="socialmedia">
+			<div class="row justify-content-center">
+				<div class="col-md-5 text-center">
+					<a class="linkedin" href="https://www.linkedin.com/in/adrian-augustyniak-tester-wroclaw/"
+						target="_blank"><i class="fab fa-linkedin"></i></a>
+					<a class="github" href="https://github.com/beattcode" target="_blank"><i
+							class="fab fa-github"></i></a>
+					<a class="facebook" href="https://www.facebook.com/adrian.augustyniak.7" target="_blank"><i
+							class="fab fa-facebook-square"></i></a>
+					<a class="instagram" href="https://www.instagram.com/beatt_man/" target="_blank"><i
+							class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!--- Footer -->
+		<footer class="footer" style="text-align: center;">
+
+			</script> Made with️ 💚 &copy; <script type="text/javascript">
+				document.write(new Date().getFullYear());
+			</script> Adrian Augustyniak
+		</footer>
+		<script>
+			$(document).ready(function () {
+				scaleVideoContainer();
+
+				initBannerVideoSize('.video-container .poster img');
+				initBannerVideoSize('.video-container .filter');
+				initBannerVideoSize('.video-container video');
+
+				$(window).on('resize', function () {
+					scaleVideoContainer();
+					scaleBannerVideoSize('.video-container .poster img');
+					scaleBannerVideoSize('.video-container .filter');
+					scaleBannerVideoSize('.video-container video');
+				});
+			});
+
+			function scaleVideoContainer() {
+				var height = $(window).height() + 5;
+				var unitHeight = parseInt(height) + 'px';
+				$('.homepage-hero-module').css('height', unitHeight);
+			}
+
+			function initBannerVideoSize(element) {
+				$(element).each(function () {
+					$(this).data('height', $(this).height());
+					$(this).data('width', $(this).width());
+				});
+
+				scaleBannerVideoSize(element);
+			}
+
+			function scaleBannerVideoSize(element) {
+
+				var windowWidth = $(window).width(),
+					windowHeight = $(window).height() + 5,
+					videoWidth,
+					videoHeight;
+
+				// console.log(windowHeight);
+
+				$(element).each(function () {
+					var videoAspectRatio = $(this).data('height') / $(this).data('width');
+
+					$(this).width(windowWidth);
+
+					if (windowWidth < 1000) {
+						videoHeight = windowHeight;
+						videoWidth = videoHeight / videoAspectRatio;
+						$(this).css({
+							'margin-top': 0,
+							'margin-left': -(videoWidth - windowWidth) / 2 + 'px'
+						});
+
+						$(this).width(videoWidth).height(videoHeight);
+					}
+
+					$('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+
+				});
+			}
+		</script>
+</body>
+
+</html>

@@ -2,6 +2,38 @@
 {
     font-family: 'Roboto', sans-serif;
 }
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 7px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background-color: white !important;
+}
+
+.navbar a {
+  color: black;
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+.navbar-nav li:hover>.dropdown-menu {
+  display: block;
+}
+
+.navbar {
+  background-color: #000;
+
+  padding-bottom: 5px;
+} 
 article
 {
     font-family: 'Roboto', sans-serif;

@@ -2,6 +2,10 @@
 {
     font-family: 'Roboto', sans-serif !important;
 }
+p
+{
+  font-family: 'Roboto', sans-serif;
+}
 .navbar {
   position: fixed;
   width: 100%;

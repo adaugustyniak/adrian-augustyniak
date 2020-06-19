@@ -1,6 +1,7 @@
 .container
 {
     font-family: 'Roboto', sans-serif !important;
+    font-weight: 300;
 }
 p
 {
@@ -37,7 +38,6 @@ p
 
 .navbar {
   background-color: #000;
-
   padding-bottom: 5px;
 } 
 article

@@ -122,13 +122,36 @@
                         <li>Znajdują błędy i wady</li>
                         <li>Przypadki testowe pomagają w lepszej organizacji pracy testera</li>
                     </ul>
-                    <p>Poza tym piszemy je , aby udokumentować w przejrzysty sposób rózne możliwości działania modułów w ramach danej aplikacji. Dobre pokrycie przypadkami testowymi oprogramowania daje nam pewność podczas testów, że nie pominęliśmy żadnej ważnej funkcjonalności. Przypadki testowe mogą stać się bardzo dobrym źródłem informacji o niej. Możemy je również wykorzystać w kontekście testów akceptacyjnych w celu potwierdzenia czy aplikacja działa zgodnie z oczekiwaniami.</p>
+					<p>Poza tym piszemy je , aby udokumentować w przejrzysty sposób rózne możliwości działania modułów w ramach danej aplikacji. Dobre pokrycie przypadkami testowymi oprogramowania daje nam pewność podczas testów, że nie pominęliśmy żadnej ważnej funkcjonalności. Przypadki testowe mogą stać się bardzo dobrym źródłem informacji o niej. Możemy je również wykorzystać w kontekście testów akceptacyjnych w celu potwierdzenia czy aplikacja działa zgodnie z oczekiwaniami.</p>
+					<br>
                     <h2>Jaki powinien by dobrze napisany przypadek testowy?</h2>
 					<br>
 					<p>
 						Dobry przypadek testowy powinien odpowiadać na pytanie "Co tak naprawdę zamierzam przetestować?" Cel każdego przypadku testowego jest inny, ale wszystkie powinny zawierać pewne stałe, kluczowe elementy składowe takie jak: unikalny identyfikator, warunki wstępne, kroki do wykonania testu, oczekiwany i aktualny rezultat.
-                    </p>
-
+					</p>
+					<br>
+					<p style= "font-weight: 400;">Elementy przypadku testowego</p>
+					<ul style="font-size: 18px;">
+					<li><b>ID</b> – unikalny numer, identyfikator danego przypadku. W narzędziach takich jak JIRA, TestRail czy TestLink nadawany jest automatycznie. Pomaga w zarządzaniu i przeszukiwaniu bazy przypadków testowych</li>
+					<li><b>Cel</b> – najważniejszy element, opisuje przyczynę tworzenia i przeprowadzania testu</li>
+					<li><b>Autor</b></li>
+					<li><b>Tytuł</b> – poeinien być konkretny, zwięzły i przedstawiać w jasny, zrozumiały sposób na czym polega dany przypadek testowy, najlepiej jedno, dobrze sformułowane zdanie</li>
+					<li><b>Środowisko</b> – np. wersja systemu operacyjnego, przeglądarki</li>
+					<li><b>Opis</b> – rozwinięcie tytułu, również zwięzłe i na temat</li>
+					<li><b>Warunki wstępne</b> – (kryteria wejścia) – są to dane potrzebne do wykonania testu. Mogą być to zarówno informacje na temat konta użytkownika, jego uprawnień, jak i miejsca w aplikacji, gdzie znajduje się zalogowany użytkownik</li>
+					<li><b>Dane testowe</b> – dobrze jest zamieszczać dane testowe, gdyż ułatwiają one pracę w regresji, a także podpowiadają jaki format dane testowe powinny mieć (dotyczy przypadków niskiego poziomu)</li>
+					<li><b>Kroki testowe</b> – instrukacja krok po kroku, co należy wykonać</li>
+					<li><b>oczekiwany rezultat</b> – jak się zakończył dany krok, sukcesem czy porażką</li>
+					<li><b>Warunek końcowy</b> – warunek, jaki musi zostać spełniony, aby test można było uznać za wykonany</li>
+					<li><b>Status</b> – "zaliczony" lub "niezaliczony". Inne to "nie wykonano" i "zablokowane"</li>
+					<li><b>Piorytet</b> – istnieje możliwość nadawania priorytetów przypadkom testowym, pozwala to w przypadku braku czasu zdefiniować, które testy zostaną wykonane w pierwszej kolejności</li>
+					<li><b>Wykonanie</b> – manualne / automatyczne</li>
+					<li><b>Czas na wykonanie</b> – czas, jaki zgodnie z naszą wiedzą powinien zostać poświęcony na weryfikację przypadku testowego</li>
+					<li><b>Powiązania z wymaganiem</b> (pokrycie testowe)</li>
+					<li><b>Załączniki</b> – zrzuty ekranu, wideo, logi z przeglądarki</li>
+					<li><b>Kategoria / typ</b></li>
+					<li><b>Informacje o wersji</b></li>
+				</ul>
 								<!-- English version -->
 								<hr id="english" style="color: black; border-width: 10px;">
 								<br>

@@ -7,6 +7,13 @@ blockquote
 {
   font-weight: bold;
 }
+code
+{
+  background: rgba(0,0,0,0.1); 
+  color: #08090a; 
+  padding: 0.1em 0.3em 0; 
+  border-radius: 2px;
+}
 p
 {
   font-family: 'Roboto', sans-serif;

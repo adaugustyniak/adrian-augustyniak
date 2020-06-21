@@ -81,16 +81,16 @@
 					<div>Posted on: <time datetime="2020-06-14">June 14, 2020</time></div>
 					<div>4 minutes of read &#9749;</div>
 					<br>
-					<h1>#2 Test cases</h1>
+					<h1>#2 Test cases, test scenarios</h1>
 					<br>
 					<p class="lead">
 						Drugi wpis będzie o jednym z podstawowych zadań testera manualnego, czyli pisaniu przypadków
 						testowych.
 					</p>
 					<br>
-					<p>
+				<!-- 	<p>
 						<a href="#english" style="color: #000;"><code>to english version fly down</code> ⬇️</a>
-					</p>
+					</p> -->
 					<br>
 					<h2>
 						Czym jest przypadek testowy?
@@ -122,7 +122,7 @@
 						<li>Jako użytkownik aplikacji Uber Eats zamawiam jedzenie, bo jestem głodny</li>
 					</ul>
 					<br>
-					<p><b>Historyjka użytkownika</b> to metoda opisywania wymagań przy tworzeniu oprogramowania w
+					<p><code>Historyjka użytkownika</code> to metoda opisywania wymagań przy tworzeniu oprogramowania w
 						metodykach zwinnych. Jest napisana prostym, zrozumiałym językiem. Testy oparte o historyjki
 						użytkownika to np. testy na poziomie systemu albo testowanie akceptacyjne.</p>
 					<br>
@@ -186,7 +186,7 @@
 					<p><b>Niezbędne:</b> ID, tytuł, warunki wstępne, rezultat oczekiwany, warunek końcowy</p>
 					<p>Reszta jest opcjonalna.</p>
 					<br>
-					<p>A teraz w końcu trochę praktyki – przykład użycia przypadku testowego w programie <b>TestLink</b>. Testujmy!</p>
+					<p>A teraz w końcu trochę praktyki! Przykład użycia przypadku testowego w programie open source do zarządzania testami  – <code>TestLink</code></p>
 					<img src="img/testLink.JPG" alt="Scenariusz testowy w TestLink">
 					<p>Jak widzimy na załączonym obrazku jest lista przypadków testowych, które weryfikują <code code style="background: rgba(0,0,0,0.1); color: #08090a; padding: 0.1em 0.3em 0; border-radius: 2px;">funkcję logowania w serwisie Allegro</code>. Scenariuszem jest właśnie weryfikacja funkcji logowania przy użyciu danych <b>wysokiego poziomu</b>. Przypadki kolejno to pozytywna próba zalogowania, negatywna, przy użyciu złego loginu, próba zalogowania przez konto Google lub Facebook. Drugi scenariusz to weryfikacja funkcji logowania przy użyciu danych <b>niskiego poziomu</b>. Oczywiście tych przypadków może być więcej! </p>
 					<br>
@@ -208,211 +208,64 @@
 					<p>Spójrzmy jeszcze na taki sam przypadek testowy, ale z konkretnymi danymi. (niskiego poziomu)</p>
 					<br>
 					<img src="img/testLinkTestCase3.PNG" alt="przypadek testowy nieskiego poziomu">
+					<br><br>
+					<p>Na <a href="https://www.guru99.com/testlink-tutorial-complete-guide.html" target="_blank" rel="nofollow">Guru99</a> znajdziecie fajny tutorial po angielsku z użycia TestLinka. Z dokładnymi ilustracjami jak krok po kroku przeprowadzać testy.</p>
+					<br>
+					<h2>Scenariusz testowy a przypadek testowy</h2>
+					<p>Najprościej mówiąc, scenariusz jest to zbiór przypadków testowych. Powinien być odzwierciedleniem dokładnie określonej funkcjonalności. (inne nazwy to skrypt testowy, specyfikacja procedury testowej)</p>
+					<br>
+					<p><code>Scenariusz testowy = [Przypadek testowy #1, przypadek testowy #2... itd.]</code></p>
+					<br>
+					<p>Analogicznie do poprzednich przykładów z TestLink np. </p>
+					<p>Scenariusz testowy – <code>sprawdź fukcjonalność logowania się</code></p>
+					<ul style="font-size: 18px;">
+						<li>Przypadek testowy #1 Logowanie – przypadek pozytywny, wprowadzenie <code>poprawnego</code> loginu i hasła</li>
+						<li>Przypadek testowy #2 Logowanie – przypadek negatywny, wprowadzenie <code>niepoprawnego</code> loginu i hasła</li>
+						<li>Przypadek testowy #3 Logowanie – sprawdź odpowiedź modułu z <code>pustym polem</code> loginu</li>
+						<li>Przypadek testowy #4 Logowanie – czy przycisk <code>Przypomnij hasło</code> działa poprawnie</li>
+						<p>itd.</p>
+					</ul>
+					<br>
+					<p><code>Pokrycie testowe</code> to wskaźnik, który daje nam odpowiedź, w jakim stopniu przetestowaliśmy daną część aplikacji (funkcjonalność).</p>
+					<br>
+					<h2>Cele przypadków testowych</h2>
+					<ul style="font-size: 18px;">
+					<li>Wyznaczenie bezpośrednio i pośrednio miary oraz metryki jakości testowanego oprogramowania</li>
+					<li>Powinny być wykonywalne</li>
+					<li>Powinny być nastawione na znalezienie defektów</li>
+					<li>Powinny weryfikować poprawność działania systemu</li>
+					<li>Powinny minimalizować koszty wsparcie technicznego</li>
+					<li>Powinny dostarczać informacje wspomagające decyzję o wstrzymaniu lub wprowadzeniu systemu na  środkowisko produkcyjne</li>
+					</ul>
+					<br>
+					<h2>Dobre praktyki pisania przypadków testowych</h2>
+					<ol styl="font-size: 18px;">
+					<li>Przypadki testowe muszą być jasno sformułowane, jak najprostszym językiem np. <code>przejdź do strony głównej</code>, <code>wprowadź dane</code>, <code>kliknij w przycisk</code> itd. Dzięki temu zrozumienie kroków będzie łatwe, a wykonanie testu szybsze.</li>
+					<li>Pisząc przypadki pamiętaj o końcowym użytkowniku!</li>
+					<li>Unikaj powtarzania tych samych przypadków</li>
+					<li>Nie należy zakładać z góry funkcjonalności i właściwości aplikacji. Należy trzymać się w oparciu o specyfikację wymagań.</li>
+					<li>Zapewnij 100% pokrycia testów. Pisząc przypadki testowe upewnij się, aby sprawdzić wszystkie wymagania oprogramowania wymienione w specyfikacji. Użyj <code>macierzy śledzenia</code> (Traceability Matrix), wówczas żadna funkcja/warunki nie będą pozostawione bez testów.</li>
+				</ol>
+				<br>
+				<h2>Skutki używania złych przypadków testowych</h2>
+				<p>Kiepska jakość przypadków testowych skutkuje m.in. niejednoznaczynymi wynikami wykonania, frustracją testerów i zwiększa ryzyko tzw. <code>rezlutatów fałszywie-pozytywnych</code> (false-positive) i <code>fałszywie-negatywnych</code>. Dlatego warto inowestować czas w naukę dobrego projektowania przypadków testowych, ich przeglądy i późniejsze pielęgnowanie, co zwraca się z nawiazką skróceniem czasu testów regresji i skutecznością wykrywania defektów.</p>
+				<br>
+				<p>Mało było cytatów w tym wpisie, więc nadrabiam. 😀</p>
+				<blockquote class="blockquote">
+					<p>„Udany przypadek testowy to taki, który odkrywa dotąd nieznany błąd”</p>
+					<footer class="blockquote-footer">Glenford J. Myers </footer>
+				</blockquote>
+				<br>
+				<p>Na koniec warto jeszcze wspomnieć, ze przypadki testowe różnią się w zależności od organizacji, poziomu testów i metod wytwarzania oprogramowania. Mogą być użyte w <code>automatyzacji</code>, bo mając już opisane scenariusze z przypadkami można je później oskryptować. Mogą też słyszyć do <code>dokumentacji testowej</code>.</p>
+				<br>
+				<h2>Podsumowanie</h2>
+				<p>Projektowanie przypadków testowych jest usystematyzowaniem pracy testera. Przypadki pomagają nam w procesie sprawdzania poprawności oprogramowania, ponieważ porządkują pracę i dokładnie wiemy, ile nam jeszcze zostało do przetestowania. Sprawdzając jakiś moduł, łatwo jest wpaść w "wir testowania" skupiając się na jednym małym wycinku, tracąc z oczu ważniejsze funkcjonalności, które nie zostały jeszcze sprawdzone.</p>
+				<p>Projektując przypadki testowe pamiętajmy, że nie jesteśmy w stanie pokryć danej funkcjonalności w 100%, gdyż nawet najlepszy tester nie jest w stanie przewidzieć wszystkiego. Nie jest możliwe też znalezienie wszystkich błędów w systemie, ale należy dążyć do tego, aby wszystkie błędy, szczególnie te krytyczne zostały wykryte.</p>
 					<!-- English version -->
-					<hr id="english" style="color: black; border-width: 10px;">
-					<br>
-					<p class="lead">
-						Why am I writing this blog? First of all, I wanted to put in order the knowledge
-						I've
-						gained so far in testing, and the main purpose of this blog will be to put it here
-						all
-						from my head. If, by the way, somebody find useful what I will write, it will be
-						great!
-						I will try to do it in the most accessible way possible. The plan is to write about
-						the
-						most important testing issues based on knowledge of theory, technical aspects,
-						tester
-						support tools and practical application examples. So much for the introduction, and
-						now
-						let's work! The first entry will be about the idea of testing and why the world
-						needs
-						software testers.
-					</p>
-					<br>
-					<h2>What is software testing? </h2>
-					<p>Before we look at dictionary definition, I would like to describe it in my words in
-						two
-						sentences: </p>
-					<br>
-					<blockquote class="blockquote">
-						<p>
-							Testing is the verification that the software is working properly as intended.
-							It is
-							the process of preventing the release of defective software on the market.
-						</p>
-					</blockquote>
-					<br>
-					<p>
-						This definition is a subjective view, it seems to me that it reflects the essence,
-						but
-						it is worth answering this question for oneself. Probably in some time my or your
-						definition may change, because as we develop, our perspective changes!
-					</p>
-					<p>Then, what the testers do?</p>
-					<br>
-					<blockquote class="blockquote">
-						<p>
-							The task of testers is to find errors in the software.
-						</p>
-					</blockquote>
-					<br>
-					<p>According to the ISTQB dictionary:</p>
-					<blockquote class="blockquote">
-						<p>
-							Testing is a process consisting of all life cycle activities, both static and
-							dynamic; focused on planning, preparing and evaluating software and related
-							products
-							to determine whether they meet specified requirements and to demonstrate that
-							they
-							are fit for purpose and to detect faults.
-						</p>
-					</blockquote>
-					<br>
-					<p>
-						One more definition from Radosław Smiligin – author of the <b>book “Zawód tester”
-						</b>from which I will probably quote a lot of content because the book is really
-						good.
-					</p>
-					<br>
-					<blockquote class="blockquote">
-						<p>
-							Testing is a natural process and, whether we call it learning or experimenting,
-							it
-							does not matter much for the activity of learning and making decisions about the
-							object being tested. Testing is experience and evaluation while describing
-							things
-							that are acceptable and not acceptable.
-						</p>
-					</blockquote>
-					<br>
-					<p>
-						To these definitions I would also add that testing is an opinion, evaluation,
-						judgment,
-						or criticism (constructive) about given software. In testing, we look for
-						confirmation
-						that the software is working properly and whether or not there are failures in the
-						area.
-					</p>
-					<br>
-					<h2>What are we testing? </h2>
-					<p>
-						The software is in computers, smartphones, smart watches, cars, TVs, game consoles,
-						e-book readers, home appliances such as washing machines, refrigerators, smart city
-						infrastructures etc. Nowadays practically all industries place great emphasis on
-						technological solutions and this trend is still growing.
-					</p>
-					<p>We can test:</p>
-					<ul style="font-size: 18px;">
-						<li>Product idea</li>
-						<li>Documentation</li>
-						<li>Source code</li>
-						<li>Integration between modules and systems</li>
-						<li>on-functional/functional product features</li>
-					</ul>
 					<br><br>
-					<h2>What should we know about testing?</h2>
-					<ul style="font-size: 18px;">
-						<li>This is a process associated with software development </li>
-						<li>This is one of the software quality assurance processes </li>
-						<li>Testing is aimed at verifying and validating the software the tester will not find
-							all
-							the errors, but well planned and conducted tests will reduce the risk of their
-							occurrence</li>
-						<li>We test mainly to find errors in the software, but not only </li>
-						<li>Testing also should provide answers to various questions, e.g. whether the
-							applications
-							is ready to be made available to the customer</li>
-					</ul>
-					<br>
-					<p>Testing is also known as Quality Assurance. These terms are often interchangeable,
-						but
-						they are not entirely the same and you have to be able to distinguish between them.
-					</p>
-					<br>
-					<h2>How the Tester differs from QA? </h2>
-					<p>The scope of QA duties is much broader than daily tasks of the Tester, because in
-						addition to checking the quality of software, QA must also optimize processes and
-						the
-						life cycle of a given product. The tester reports errors found in the application
-						and QA
-						is to improve processes. In the case of both testers, one thing is certainly common:
-						regardless of the working method, both the tester and the QA are supposed to deliver
-						a
-						product of the highest quality.</p>
-					<br>
-					<h2>Verification and validation </h2>
-					<p>Going further, testers are to verify that the software is working properly and that
-						the
-						state is as we assumed it would be. The verification is usually carried out on the
-						basis
-						of the requirements specification document.
-						We also carry out validation, i.e. we check whether the software complies with the
-						expectations of the user (customer, consumer, company ordering the software).
-						Validation
-						is carried out by <b>User Acceptance Tests</b>.</p>
-					<p>In testing we should we should strive to ensure that verification and validation have
-						similar results. Although often the business and end-user needs are not exactly the
-						same, the more in common they have, the more effective testing is. This leading into
-						higher levels of customer satisfaction. (Customer our master 😀) </p>
-					<br>
-					<h2>Why do we need to test</h2>
-					<p>Making mistakes is unfortunately a human thins, but that’s why we – Bugmasters come
-						with help! In front of us the bugs hide in the darkest corners of the application
-						and our task is to find them and get rid of them once and for all. Away! </p>
-					<p>From a business perspective, testing saves time and money. The earlier errors are
-						detected, the less it will cost to fix it. That is why companies strive to test from
-						the earliest stages of the software life cycle. (called shift-left testing) We can
-						look through the documentation, analyze it and find the first errors there – this is
-						static testing.</p>
-					<p>Software failures can lead to the loss of human life even in the wors-case scenarios,
-						so in some industries like medicine and transport tesint is a very responsible job.
-					</p>
-					<p>Examples from history:</p>
-					<ul style="font-size: 20px;">
-						<li>On April 26, 1994 a China Airlines Airbus A300 aircraft crashed and 264 passengers
-							died as a result of a software error.
-						</li>
-						<li>In April 1999, a software error resulted in an unsuccessful attempt to launch the
-							satellite in orbit, which cost $1.2 billion. It was the most expensive accident in
-							history </li>
-						<li>During the launch of the new Windows 98 operating system from Microsoft, OS crashed.
-							It was tv live presentation and Bill Gates' reaction was invaluable 😅</li>
-					</ul>
-					<p><a href="#youtube" style="color: #ffe81f;">[to find video fly up] 🚀</a></p>
-					<br>
-					<h2>Summary</h2>
-					<p>So much for the introduction. I gave my definition of testing and some from books and
-						dictionary for comparison. What we can test, which devices, what we should know
-						about testing and why it is necessary. What is Quality Assurance and how it differs
-						from a tester. We learned the difference between verification and validation and the
-						stories where finding no mistakes caused big financial losses and what it worse,
-						human lives. So, the answer for question why the World needs testers is that they
-						make our lives better and easier by making it easier to use devices with properly
-						working software. Well done work by testers can even save lives in some cases! </p>
-					<br>
-					<p>Finnaly, a quote from James Marcus Bach:</p>
-					<br>
-					<blockquote class="blockquote">
-						<p>
-							Testing is an endless process of comparing the invisible to the ambiguous, and
-							it is done so that something that is impossible to predict does not affect those
-							whom we do not know by name.
-						</p>
-					</blockquote>
-					<br>
-					<p>Final inscriptions...</p>
-					<p>Attention! For the ordering of the names, I’ll take the rule that bug, error,
-						malfunctions is the same and I’ll use them interchangeably. In the ISTQB syllabus, on the other
-						hand, <b>an error</b> is the <b>mistake</b> of a human being who causes a defect in the program,
-						and execution of a code with a <b>defect</b> usually results in a <b>crash</b>.</p>
-					<br>
-					<p><b>P.S.</b> And when one of you finds a typo, grammatical or syntactic error it means
-						that you will be a good tester or you already are, because have an eye for details
-						and know Polish and English syntax well. If you want to positively influence the
-						quality of this blog, you can write to me about these mistakes. Keep it up!</p>
-					<br><br>
-					<p style="text-align: center;">THE END</p>
-					<P style="text-align: center;">of article one</P>
+					<p style = "font-size: 13px;">Literatura: 📚</p>
+					<p style = "font-size: 13px;">Bardzo dużo inspiracji garściami częrpałem z: blogu [bulldogjob.pl], a dokładniej z artykułu Karoliny Kowalskiej, z blogu Michała Putowskiego [jakzostactesterem.pl], z blogu Waldemara Szafrańca [wyszkolewas.com.pl], również z [cherry-it.pl], ze wspomnianej wcześniej strony [guru99.com] i standardowo z materiałów ISTQB.</p>
+					<p style = "font-size: 13px;">Zachęcam do zajrzenia w tamte miejsca!</p>
 				</section>
 			</article>
 		</div>

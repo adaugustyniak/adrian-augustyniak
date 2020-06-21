@@ -181,6 +181,33 @@
 						<li><b>Kategoria / typ</b></li>
 						<li><b>Informacje o wersji</b></li>
 					</ul>
+					<br>
+					<p>Wymieniłem wszystkie elementy, które mogą się znaleźć w przypadku testowym, jednak nie wyszystkie oczywiście są wymagane. Ponieżej podział na niezbędne i pozostałe.</p>
+					<p><b>Niezbędne:</b> ID, tytuł, warunki wstępne, rezultat oczekiwany, warunek końcowy</p>
+					<p>Reszta jest opcjonalna.</p>
+					<br>
+					<p>A teraz w końcu trochę praktyki – przykład użycia przypadku testowego w programie <b>TestLink</b>. Testujmy!</p>
+					<img src="img/testLink.JPG" alt="Scenariusz testowy w TestLink">
+					<p>Jak widzimy na załączonym obrazku jest lista przypadków testowych, które weryfikują <code code style="background: rgba(0,0,0,0.1); color: #08090a; padding: 0.1em 0.3em 0; border-radius: 2px;">funkcję logowania w serwisie Allegro</code>. Scenariuszem jest właśnie weryfikacja funkcji logowania przy użyciu danych <b>wysokiego poziomu</b>. Przypadki kolejno to pozytywna próba zalogowania, negatywna, przy użyciu złego loginu, próba zalogowania przez konto Google lub Facebook. Drugi scenariusz to weryfikacja funkcji logowania przy użyciu danych <b>niskiego poziomu</b>. Oczywiście tych przypadków może być więcej! </p>
+					<br>
+					<img src="img/testLinkTestCase.PNG" alt="Przypadek testowy w TestLink">
+					<br><br>
+					<p>Tutaj widzimy podgląd pierwszego przypadku testowego #AA-1, który zawiera:</p>
+					<ul style="font-size: 18px;">
+						<li>tytuł: <code>Login account attempt - positive</code></li>
+						<li>krótkie podsumowanie: <code>User input valid login and password in login form at Allegro</code></li>
+						<li>warunki wstępne: <code>The user has active Allegro account</code></li>
+						<li>kroki: <code>step actions</code> ➡️ <code>expected result</code></li>
+						<li>dodatkowo są jeszcze pola: <code>status, importance, estimated exec. (min), platforms, requirements, relations, test plan usage, attached files</code></li>
+					</ul>
+					<img src="img/testLinkTestCase2.PNG" alt="Przypadek testowy w TesLink">
+					<br><br>
+					<p>
+						W powyższym przykładzie przeprowadziłem pozytywny przypadek testowy udanej próby logowania się do Allegro z użyciem danych wysokiego poziomu. (niekonkretnych)  
+					</p>
+					<p>Spójrzmy jeszcze na taki sam przypadek testowy, ale z konkretnymi danymi. (niskiego poziomu)</p>
+					<br>
+					<img src="img/testLinkTestCase3.PNG" alt="przypadek testowy nieskiego poziomu">
 					<!-- English version -->
 					<hr id="english" style="color: black; border-width: 10px;">
 					<br>
